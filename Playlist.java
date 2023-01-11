@@ -65,6 +65,20 @@ public class Playlist {
             }
         }
 
+        //method to get sublist of all liked songs
+        public void showLikedSongs()
+        {
+            for(int i = 0; i < playlist.size(); i++)
+            {
+                if(playlist.get(i).getLike() == true)
+                {
+                    playlist.get(i).toString();
+                }
+            }
+        }
+
+        
+
         
 
 
