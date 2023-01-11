@@ -50,5 +50,13 @@ public class Playlist {
             
         }
 
+        //method to remove a specfic song, 
+        public void removeSong(int position)
+        {
+            playlist.remove(position);
+        }
+
+        
+
         
 }
