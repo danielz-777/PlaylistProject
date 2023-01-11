@@ -56,6 +56,19 @@ public class Playlist {
             playlist.remove(position);
         }
 
+        //method to examain all the songs, use toString method
+        public void showAllSongs()
+        {
+            for(int i = 0; i < playlist.size(); i++)
+            {
+                playlist.get(i).toString();
+            }
+        }
+
+        
+
+
+
         
 
         
