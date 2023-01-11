@@ -43,5 +43,12 @@ public class Playlist {
             playlist.add(s1);
         }
 
+        //method to like a song, use the setter method from Song
+        public void likeSong(int position)
+        {
+            playlist.get(position).setLike();
+            
+        }
+
         
 }
