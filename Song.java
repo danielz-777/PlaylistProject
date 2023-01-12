@@ -56,7 +56,7 @@ public class Song {
       //method to get song duration
       public String getDuration()
       {
-        String time;
+        
         int minutes = 0;
         while(seconds > 60)
         {
@@ -65,6 +65,11 @@ public class Song {
         }
         time = minutes + " : " + seconds;
         return time;
+      }
+      //method to get int value of duration
+      public int getSeconds()
+      {
+        return seconds;
       }
 
       //method to like song

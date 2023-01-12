@@ -77,7 +77,41 @@ public class Playlist {
             }
         }
 
-        
+        //method to determine total duration of all songs
+        public String totalDuration()
+        {
+            int totalSeconds = 0;
+            int totalMinutes = 0;
+            for(int i = 0; i < playlist.size(); i++)
+            {
+                totalSeconds += playlist.get(i).getSeconds();
+
+            }
+            while(totalSeconds > 60)
+            {
+                totalMinutes += 1;
+                totalSeconds -= 60;
+            }
+            return totalMinutes + " : " + totalSeconds;
+            
+        }
+
+        //method to remove all unliked songs from list
+        public void removeUnlikedSongs()
+        {
+            for(int i = 0; i < playlist.size(); i++)
+            {
+                if(playlist.get(i).getLike() == false)
+                {
+                    playlist.remove(i);
+                    i--;
+                }
+            }
+        }
+
+
+
+
 
         
 
