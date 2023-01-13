@@ -61,8 +61,9 @@ public class Playlist {
         {
             for(int i = 0; i < playlist.size(); i++)
             {
-                playlist.get(i).toString();
+                System.out.print(playlist.get(i).toString());
             }
+
         }
 
         //method to get sublist of all liked songs
@@ -72,7 +73,7 @@ public class Playlist {
             {
                 if(playlist.get(i).getLike() == true)
                 {
-                    playlist.get(i).toString();
+                    System.out.println(playlist.get(i).toString());
                 }
             }
         }

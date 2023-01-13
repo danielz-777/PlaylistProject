@@ -25,6 +25,14 @@ public class Song {
         title = titleName;
         like = false;
         time = "";
+
+        int minutes = 0;
+        while(seconds > 60)
+        {
+            minutes += 1;
+            seconds -= 60;
+        }
+        time = minutes + ":" + seconds;
     }
 
 
@@ -56,14 +64,6 @@ public class Song {
       //method to get song duration
       public String getDuration()
       {
-        
-        int minutes = 0;
-        while(seconds > 60)
-        {
-            minutes += 1;
-            seconds -= 60;
-        }
-        time = minutes + " : " + seconds;
         return time;
       }
       //method to get int value of duration

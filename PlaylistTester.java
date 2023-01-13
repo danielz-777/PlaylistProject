@@ -10,32 +10,42 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
-
+        Playlist p = new Playlist();
         System.out.println("Adding songs to the Playlist...\n");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
+        p.addSong(new Song(430, "John", "Wjoasjof"));
+        p.addSong(new Song(450, "dsds", "dasdasd"));
+        p.addSong(new Song(230, "Peppa Pig", "Peppa"));
+        p.addSong(new Song(580, "alskalsfj", "iashfi"));
+        p.addSong(new Song(180, "popoeqw", "oqwiqwiq"));
+
 
 
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
+        p.showAllSongs();
 
-
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
+        System.out.println("\nLiking the songs in position 1, 3, 4, etc....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
-
-
-        System.out.println("Printing the songs...\n");
-
-
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
-
+        p.likeSong(1);
+        p.likeSong(3);
+        p.likeSong(4);
+        
 
         System.out.println("Printing the songs...\n");
+        p.showLikedSongs();
 
+        System.out.println("\nRemoving the song in position 2, 3,  etc...\n");
+        p.removeSong(2);
+        p.removeSong(3);
+
+        System.out.println("Printing the songs...\n");
+        p.showAllSongs();
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
