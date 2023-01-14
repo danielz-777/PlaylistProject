@@ -93,7 +93,7 @@ public class Playlist {
                 totalMinutes += 1;
                 totalSeconds -= 60;
             }
-            return totalMinutes + " : " + totalSeconds;
+            return totalMinutes + ":" + totalSeconds;
             
         }
 
