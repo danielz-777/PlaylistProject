@@ -20,6 +20,7 @@ public class Song {
      */
     public Song(int duration, String artistName, String titleName)
     {
+        int second = duration;
         seconds = duration;
         artist = artistName;
         title = titleName;
@@ -27,12 +28,12 @@ public class Song {
         time = "";
 
         int minutes = 0;
-        while(seconds > 60)
+        while(second >= 60)
         {
             minutes += 1;
-            seconds -= 60;
+            second -= 60;
         }
-        time = minutes + ":" + seconds;
+        time = minutes + ":" + second;
     }
 
 
